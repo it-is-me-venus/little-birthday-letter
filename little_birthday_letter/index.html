@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe8ef">
+  <meta name="description" content="A little birthday letter made with love.">
+  <title>A Little Birthday Letter 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♡</span><span>♥</span><span>♡</span><span>✿</span><span>♥</span><span>♡</span>
+  </div>
+  <main class="page">
+    <p class="eyebrow">A tiny website, made just for you</p>
+    <h1>Happy Birthday, <span>My Love</span> 💗</h1>
+    <p class="intro">I made a little something for you. Tap the envelope to open your surprise.</p>
+
+    <button class="envelope-button" id="envelopeButton" type="button" aria-label="Open your birthday letter"
+      aria-expanded="false">
+      <span class="envelope" id="envelope">
+        <span class="letter-peek">
+          <span class="letter-heart">♥</span>
+          <span class="letter-label">For you, always</span>
+        </span>
+        <span class="envelope-back"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-seal">♥</span>
+      </span>
+    </button>
+    <p class="tap-hint" id="tapHint">Tap the little envelope ♡</p>
+
+    <section class="letter-card" id="letterCard" hidden aria-live="polite">
+      <div class="tiny-bow">୨୧</div>
+      <h2>To my favourite person,</h2>
+      <p>Happy birthday, Koko. ♡</p>
+      <p>Happy Birthday 🎂🎈ပါအသက်ရေ မွေးနေ့မှာပျော်ရွှင်ပါစေလို့ဆုတောင်းပေးလိုက်ပါတယ်နော်</p>
+      <p>အခုလိုကောင်းကောင်းမွန်မွန်လေးကြီးပြင်းလာပေးတဲ့အတွက်ကျေးဇူးတင်ပါတယ်နော် အသက်ကို</p>
+      <p>‌ယနေ့မှစပြီးနောက်‌နှစ်ပေါင်းများစွာထိကို ကျန်းကျန်းမာမာ ပျော်ပျော်ရွှင်ရွှင်လေးဆက်ရှိသွားပေးပါနော်</p>
+      <p>ကျန်းမာရေးလဲဂရုစိုက်ပါ လုပ်သမျှ ကိုင်သမျှလုပ်ငန်းတိုင်းအဆင်ပြေပြီးတော့ သွားလာသာပြီး လာလမ်းဖြောင့်ပါစေ </p>
+      <p>မိဘနဲ့ မိသားစုကိုပြန်ကြည့်နိုင်တဲ့ သားကောင်းရတနာလေး ဖြစ်ပါစေနော် အသက်</p>
+      <p>ဒီနေ့ဒီရက်ကစပြီး ပေပီတို့အကြာကြီးအတူတူဆက်ရှိသွားကြမယ်နော်</p>
+      <p>ပေပီ့ကို အများကြီးသည်းခံပေး အများကြီးချစ်‌ပေးတဲ့အတွက်လဲ ပေပီက အများကြီးကျေးဇူးတင်ပါတယ်ရှင့်</p>
+      <p>ချစ်တယ်ကိုကိုး</p>
+      <p>May god bless you pr baby ရေ 💗 I love you to the moon and back 💗🫶🏻</p>
+      <p class="signoff">Happy birthday, my love.<br><span>Always sending you a little extra love ♡</span></p>
+      <div class="divider">♡ ── ୨୧ ── ♡</div>
+
+      <section class="memories">
+        <h3>Our little moments 📸</h3>
+        <p class="photo-help">Add your favourite photos by replacing the sample images in the <code>photos</code> folder
+          and updating their filenames in <code>index.html</code>.</p>
+        <div class="photo-grid">
+          <figure><img src="photos/viber_image_2026-10-09_22-50-54-125.jpg" alt="A favourite memory together"
+              onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+            <figcaption>little moment, big feeling</figcaption>
+          </figure>
+          <figure><img src="photos/viber_image_2026-10-09_22-50-53-540.jpg" alt="A special memory"
+              onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+            <figcaption>one for the memory book</figcaption>
+          </figure>
+          <figure><img src="photos/viber_image_2026-10-09_22-50-53-567.jpg" alt="A sweet moment"
+              onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+            <figcaption>my favourite kind of day</figcaption>
+          </figure>
+          <figure><img src="photos/viber_image_2026-10-09_22-50-53-507.jpg" alt="A sweet moment"
+              onerror="this.style.display='none'; this.nextElementSibling.hidden=false">
+            <figcaption>my favourite kind of day</figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class="final-note">
+        <span class="big-heart">♥</span>
+        <p>Make a wish, birthday boy.</p>
+        <p class="small-note">The world is sweeter with you in it. ✨</p>
+      </div>
+      <button class="replay-button" id="replayButton" type="button">Fold the letter again ↺</button>
+    </section>
+
+    <section class="heart-surprise">
+      <p>Psst… one more tiny surprise ♡</p>
+
+      <button id="tinyHeartButton" aria-label="Open love surprise">
+        ♥
+      </button>
+
+      <p class="heart-hint">Tap the little heart 💗</p>
+    </section>
+
+    <div class="heart-modal" id="heartModal" hidden>
+      <button id="closeHeartModal" class="close-heart" aria-label="Close">×</button>
+
+      <div class="big-heart">♥</div>
+
+      <h2>I love you, Ko Ko</h2>
+      <p>More than this little heart can say ♡</p>
+      <button id="heartOkayButton">A little kiss of love 💋</button>
+    </div>
+    <footer>made with a little pink, a lot of care, and love ♡</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
